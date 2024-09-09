@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: stretch;
   min-height: 400px;
   background-color: lightgreen;
   /* margin: 5px; */
@@ -19,6 +20,9 @@ body {
   padding: 5px;
 }
 
+/* purpose of this # was to test diffrent flexbox declarations */
 #box1 {
-  flex-basis: 500px;
+  /* flex-basis: 500px; */
+  /* flex-shrink: 4; */
+  /* flex-grow: 2; */
 }
