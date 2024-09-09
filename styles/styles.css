@@ -5,9 +5,20 @@ body {
 }
 .flex-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 400px;
   background-color: lightgreen;
+  /* margin: 5px; */
+  gap: 5px;
 }
 
 .section-flexbox {
   background-color: lightskyblue;
+  margin: 5px;
+  padding: 5px;
+}
+
+#box1 {
+  flex-basis: 500px;
 }
