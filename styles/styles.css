@@ -1,0 +1,13 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+.flex-wrapper {
+  display: flex;
+  background-color: lightgreen;
+}
+
+.section-flexbox {
+  background-color: lightskyblue;
+}
