@@ -3,6 +3,8 @@ body {
   margin: 0 auto;
   background-color: antiquewhite;
 }
+
+/* flex-box under body */
 .flex-wrapper {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,7 @@ body {
   gap: 5px;
 }
 
+/* flexbox within .flex-wrapper for single sections */
 .section-flexbox {
   background-color: lightskyblue;
   margin: 5px;
@@ -39,6 +42,45 @@ header {
 }
 /* hatte hier zuerst ID verwendet, aber class wrsl. besser, weil ID ja auch für links gebraucht werden */
 /* Inspiration von Josh Comeau abgeholt */
+
+.meet-me-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-basis: 200px;
+}
+
+.meet-me-flexbox img {
+  max-width: 250px;
+  /* max width, damit das Bild nicht zu groß wird */
+  /* flex: 2; */
+}
+
+.meet-me-skill-list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  /* flex basis weißt der ul eine maximale Größe von 300px im flex box verhältnis zu */
+}
+
+.meet-me-skill-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.meet-me-skill-list ul li {
+  color: black;
+  background-color: palegoldenrod;
+  border: 2px solid palegoldenrod;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 /* purpose of this # was to test diffrent flexbox declarations */
 #box1 {
