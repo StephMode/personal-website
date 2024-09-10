@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  min-height: 400px;
+  height: 100vh;
   background-color: lightgreen;
   /* margin: 5px; */
   gap: 5px;
@@ -19,6 +19,26 @@ body {
   margin: 5px;
   padding: 5px;
 }
+
+header {
+  max-height: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 1.2rem;
+  padding: 0px;
+}
+
+.nav-bar-title {
+  margin-right: auto;
+  text-align: left;
+  font-size: 1.5rem;
+}
+/* hatte hier zuerst ID verwendet, aber class wrsl. besser, weil ID ja auch für links gebraucht werden */
+/* Inspiration von Josh Comeau abgeholt */
 
 /* purpose of this # was to test diffrent flexbox declarations */
 #box1 {
