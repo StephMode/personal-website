@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <img src={portrait} alt="portrait" width={460} height={328} />
+      <img src={portrait} alt="portrait" width={330} height={"auto"} />
       <p>
         conceptual<span> / </span>
         interdisciplinary<span> / </span>
@@ -22,28 +22,36 @@ function App() {
       <section className="about-me--section">
         <h3>About</h3>
         <p>
-          Aspiring Front-End Developer with a background in international sales,
-          project management, and tech partnerships. Currently training in web
-          development at neue fische, building real-world projects.
+          Background in international sales, project management, and tech
+          partnerships. Currently learning web development at neue fische,
+          building real-world projects.
         </p>
         <p>
-          In past roles, I led sales and integration projects across Europe,
-          focused on creating solutions that blend function with form
-        </p>
-        <p>
-          Now, I’m eager to bring my technical skills and collaborative mindset
-          to a development team, crafting user-centered, visually engaging
+          Eager to bring my technical skills and collaborative mindset to a
+          development team, crafting user-centered, visually engaging
           interfaces.
         </p>
       </section>
 
       <section className="connect--section">
         <h3>Let's connect</h3>
-        <a href="https://vite.dev" target="_blank">
-          <img src={linkedInIcon} className="logo" alt="Vite logo" />
+        <a href="https://github.com/StephMode" target="_blank">
+          <img
+            src={githubIcon}
+            className="logo"
+            alt="Vite logo"
+            height={40}
+            width={40}
+          />
         </a>
-        <a href="https://vite.dev" target="_blank">
-          <img src={githubIcon} className="logo" alt="Vite logo" />
+        <a href="https://www.linkedin.com/in/stephanmodel" target="_blank">
+          <img
+            src={linkedInIcon}
+            className="logo"
+            alt="Vite logo"
+            height={40}
+            width={40}
+          />
         </a>
       </section>
     </>
