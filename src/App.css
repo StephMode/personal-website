@@ -1,12 +1,12 @@
 #root {
-  max-width: 1280px;
+  max-width: 600px;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   /* text-align: center; */
 }
 
 .about-me--section {
-  max-width: 650px;
+  max-width: 370px;
 }
 
 .logo {

@@ -24,18 +24,16 @@ function App() {
         <p>
           Aspiring Front-End Developer with a background in international sales,
           project management, and tech partnerships. Currently training in web
-          development at neue fische, where I’m building hands-on projects.
+          development at neue fische, building real-world projects.
         </p>
         <p>
           In past roles, I led sales and integration projects across Europe,
-          collaborating closely with cross-functional teams. My focus has always
-          been on solving technical challenges with user-centered solutions—this
-          drive inspired me to transition to web development.
+          focused on creating solutions that blend function with form
         </p>
         <p>
-          I’m excited to bring my technical skills and collaborative mindset to
-          a development team, crafting user-friendly interfaces and tackling
-          real-world problems through code.
+          Now, I’m eager to bring my technical skills and collaborative mindset
+          to a development team, crafting user-centered, visually engaging
+          interfaces.
         </p>
       </section>
 
