@@ -11,7 +11,11 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Stephan Model</h1>
+      <h1>
+        STEPHAN
+        <br />
+        MODEL
+      </h1>
       <h2>Front End Developer</h2>
       <img src={portrait} alt="portrait" width={330} height={"auto"} />
       <p>
@@ -39,8 +43,8 @@ function App() {
         <a href="https://github.com/StephMode" target="_blank">
           <img
             src={githubIcon}
-            className="logo"
-            alt="Vite logo"
+            className="icon"
+            alt="github logo"
             height={40}
             width={40}
           />
@@ -48,8 +52,8 @@ function App() {
         <a href="https://www.linkedin.com/in/stephanmodel" target="_blank">
           <img
             src={linkedInIcon}
-            className="logo"
-            alt="Vite logo"
+            className="icon"
+            alt="linkedin logo"
             height={40}
             width={40}
           />
