@@ -11,14 +11,15 @@ import "./App.css";
 function App() {
   return (
     <>
+      <h1>Stephan Model</h1>
+      <h2>Front End Developer</h2>
       <img src={portrait} alt="portrait" width={330} height={"auto"} />
       <p>
         conceptual<span> / </span>
         interdisciplinary<span> / </span>
         agile
       </p>
-      <h1>Stephan Model</h1>
-      <h2>Front End Developer</h2>
+
       <section className="about-me--section">
         <h3>About</h3>
         <p>

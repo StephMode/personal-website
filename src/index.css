@@ -3,14 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* for dark/light mode later on*/
+  /* color-scheme: light dark; */
+
+  /* 📋 change to var */
+  color: #18000a;
+  background-color: #e1dfdd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Montserrat import */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/public/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 a {
@@ -54,6 +63,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* media query for responsiveness */
+/* 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,4 +76,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
