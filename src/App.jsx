@@ -11,21 +11,32 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>
-        STEPHAN
-        <br />
-        MODEL
-      </h1>
-      <h2>Front End Developer</h2>
-      <img src={portrait} alt="portrait" width={330} height={"auto"} />
-      <p>
-        conceptual<span> / </span>
-        interdisciplinary<span> / </span>
-        agile
-      </p>
+      <header className="page-header--header">
+        <p className="page-header--logo">STEPHAN MODEL</p>
+      </header>
+      <section className="page-title--section">
+        <h1 className="page-title--heading">
+          Front End <br /> Developer
+        </h1>
+        <ul className="page-title--tags">
+          <li>React</li>
+          <li> / </li>
+          <li>Git & GitHub</li>
+          <li> / </li>
+          <li>HTML & CSS</li>
+        </ul>
+      </section>
+      <section className="hero--section">
+        <img src={portrait} alt="portrait" width={330} height={"auto"} />
+        <figcaption>
+          conceptual<span> / </span>
+          interdisciplinary<span> / </span>
+          agile
+        </figcaption>
+      </section>
 
       <section className="about-me--section">
-        <h3>About</h3>
+        <h2>About</h2>
         <p>
           Background in international sales, project management, and tech
           partnerships. Currently learning web development at neue fische,
@@ -38,9 +49,13 @@ function App() {
         </p>
       </section>
 
-      <section className="connect--section">
-        <h3>Let's connect</h3>
-        <a href="https://github.com/StephMode" target="_blank">
+      <section className="connect-section--container">
+        <h2>Let's connect</h2>
+        <a
+          href="https://github.com/StephMode"
+          target="_blank"
+          className="connect-section--link"
+        >
           <img
             src={githubIcon}
             className="icon"
@@ -48,8 +63,15 @@ function App() {
             height={40}
             width={40}
           />
+          <span> / </span>
+          My projects & how I work
         </a>
-        <a href="https://www.linkedin.com/in/stephanmodel" target="_blank">
+        <br />
+        <a
+          href="https://www.linkedin.com/in/stephanmodel"
+          target="_blank"
+          className="connect-section--link"
+        >
           <img
             src={linkedInIcon}
             className="icon"
@@ -57,6 +79,8 @@ function App() {
             height={40}
             width={40}
           />
+          <span> / </span>
+          My professional journey
         </a>
       </section>
     </>

@@ -5,8 +5,35 @@
   /* text-align: center; */
 }
 
+.page-header--header {
+  margin-bottom: 1em;
+}
+
+.page-header--logo {
+  margin: 0;
+  padding: 0;
+}
+
+.page-title--section {
+  margin-bottom: 2em;
+}
+
+.page-title--heading {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
 .about-me--section {
   max-width: 370px;
+}
+
+/* CSS for the connect section */
+
+.connect-section--link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .icon {
@@ -18,5 +45,18 @@
   filter: drop-shadow(0 0 2em #18000a);
 }
 .icon.react:hover {
+  filter: drop-shadow(0 0 2em #18000a);
+}
+
+a {
+  font-weight: 600;
+  color: var(--main-font-color--diesel);
+  text-decoration: inherit;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 2em #18000a);
+}
+a.react:hover {
   filter: drop-shadow(0 0 2em #18000a);
 }
