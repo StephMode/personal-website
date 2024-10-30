@@ -20,28 +20,3 @@
 .icon.react:hover {
   filter: drop-shadow(0 0 2em #18000a);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-/* class for highlighting certain text */
-/* .read-the-docs {
-  color: #888;
-} */
-
-/* for making logos spin upon rerender */
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
