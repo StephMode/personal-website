@@ -5,16 +5,18 @@
   /* for dark/light mode later on*/
   /* color-scheme: light dark; */
 
-  /* 📋 change to var */
+  /* variables */
   --main-font-color--diesel: #18000a;
   --main-bg-color--westar: #e1dfdd;
-  /* color: #18000a; */
-  background-color: var(--main-bg-color--westar);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Global list stylings */
@@ -32,23 +34,10 @@ ul {
   src: url("/public/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-  */
-
 body {
   color: var(--main-font-color--diesel);
+  background-color: var(--main-bg-color--westar);
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
   min-height: 100vh;
 }
-
-/* 📋 add media query for responsiveness */

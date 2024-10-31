@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <header className="page-header--header">
-        <p className="page-header--logo">STEPHAN MODEL</p>
+        <p className="page-header--logo">// STEPHAN MODEL</p>
       </header>
       <section className="page-title--section">
         <h1 className="page-title--heading">
@@ -20,14 +20,20 @@ function App() {
         </h1>
         <ul className="page-title--tags">
           <li>React</li>
-          <li> / </li>
+          <li className="divider"> / </li>
           <li>Git & GitHub</li>
-          <li> / </li>
+          <li className="divider"> / </li>
           <li>HTML & CSS</li>
         </ul>
       </section>
-      <section className="hero--section">
-        <img src={portrait} alt="portrait" width={330} height={"auto"} />
+      <section className="hero-section">
+        <img
+          src={portrait}
+          alt="portrait"
+          width={"auto"}
+          height={"auto"}
+          className="hero-section--image"
+        />
         <figcaption>
           conceptual<span> / </span>
           interdisciplinary<span> / </span>
@@ -36,13 +42,13 @@ function App() {
       </section>
 
       <section className="about-me--section">
-        <h2>About</h2>
-        <p>
+        <h2 className="section--heading">About</h2>
+        <p className="about-me--section--paragraph">
           Background in international sales, project management, and tech
           partnerships. Currently learning web development at neue fische,
           building real-world projects.
         </p>
-        <p>
+        <p className="about-me--section--paragraph">
           Eager to bring my technical skills and collaborative mindset to a
           development team, crafting user-centered, visually engaging
           interfaces.
@@ -50,7 +56,7 @@ function App() {
       </section>
 
       <section className="connect-section--container">
-        <h2>Let's connect</h2>
+        <h2 className="section--heading">Let's connect</h2>
         <a
           href="https://github.com/StephMode"
           target="_blank"
@@ -63,7 +69,7 @@ function App() {
             height={40}
             width={40}
           />
-          <span> / </span>
+          <span className="divider"> / </span>
           My projects & how I work
         </a>
         <br />
@@ -79,7 +85,7 @@ function App() {
             height={40}
             width={40}
           />
-          <span> / </span>
+          <span className="divider"> / </span>
           My professional journey
         </a>
       </section>

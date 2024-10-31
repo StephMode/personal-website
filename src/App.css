@@ -1,8 +1,13 @@
 #root {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0;
-  padding: 15px;
-  /* text-align: center; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  font-weight: bold;
 }
 
 .page-header--header {
@@ -16,6 +21,7 @@
 
 .page-title--section {
   margin-bottom: 2em;
+  max-width: 100%;
 }
 
 .page-title--heading {
@@ -24,8 +30,17 @@
   margin-bottom: 0.3em;
 }
 
+.hero-section {
+  max-width: 100%;
+}
+
+.hero-section--image {
+  width: 320px;
+  height: auto;
+}
+
 .about-me--section {
-  max-width: 370px;
+  max-width: 100%;
 }
 
 /* CSS for the connect section */
@@ -34,6 +49,7 @@
   display: flex;
   align-items: center;
   gap: 1em;
+  max-width: 100%;
 }
 
 .icon {
@@ -59,4 +75,46 @@ a:hover {
 }
 a.react:hover {
   filter: drop-shadow(0 0 2em #18000a);
+}
+
+@media screen and (min-width: 500px) {
+  #root {
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 1.5em;
+  }
+
+  .page-title--heading {
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+  }
+
+  .page-title--tags {
+    font-size: 1.2em;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hero-section--image {
+    width: 420px;
+    height: "auto";
+  }
+
+  .section--heading {
+    font-size: 2.3em;
+  }
+
+  .about-me--section--paragraph {
+    font-size: 1.1em;
+    max-width: 65%;
+  }
+
+  .connect-section--link {
+    font-size: 1.1em;
+  }
 }
