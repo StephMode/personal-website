@@ -11,10 +11,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <header className="page-header--header">
+      <header className="page-header--container">
         <p className="page-header--logo">// STEPHAN MODEL</p>
       </header>
-      <section className="page-title--section">
+      <section className="page-title--container">
         <h1 className="page-title--heading">
           Front End <br /> Developer
         </h1>
@@ -26,7 +26,7 @@ function App() {
           <li>HTML & CSS</li>
         </ul>
       </section>
-      <section className="hero-section">
+      <section className="hero-section--container">
         <img
           src={portrait}
           alt="portrait"
@@ -34,14 +34,14 @@ function App() {
           height={"auto"}
           className="hero-section--image"
         />
-        <figcaption>
+        <figcaption className="hero-section--tags">
           conceptual<span> / </span>
           interdisciplinary<span> / </span>
           agile
         </figcaption>
       </section>
 
-      <section className="about-me--section">
+      <section className="about-me--container">
         <h2 className="section--heading">About</h2>
         <p className="about-me--section--paragraph">
           Background in international sales, project management, and tech

@@ -10,7 +10,11 @@
   font-weight: bold;
 }
 
-.page-header--header {
+.section--heading {
+  font-size: 1.8em;
+}
+
+.page-header--container {
   margin-bottom: 1em;
 }
 
@@ -19,7 +23,7 @@
   padding: 0;
 }
 
-.page-title--section {
+.page-title--container {
   margin-bottom: 2em;
   max-width: 100%;
 }
@@ -30,7 +34,11 @@
   margin-bottom: 0.3em;
 }
 
-.hero-section {
+.page-title--tags {
+  font-size: 0.9em;
+}
+
+.hero-section--container {
   max-width: 100%;
 }
 
@@ -39,8 +47,16 @@
   height: auto;
 }
 
-.about-me--section {
+.hero-section--tags {
+  font-size: 0.8em;
+}
+
+.about-me--container {
   max-width: 100%;
+}
+
+.about-me--section--paragraph {
+  font-size: 0.9em;
 }
 
 /* CSS for the connect section */
@@ -64,16 +80,16 @@
   filter: drop-shadow(0 0 2em #18000a);
 }
 
-a {
+.connect-section--link {
   font-weight: 600;
   color: var(--main-font-color--diesel);
   text-decoration: inherit;
 }
 
-a:hover {
+.connect-section--link:hover {
   filter: drop-shadow(0 0 2em #18000a);
 }
-a.react:hover {
+.connect-section--link.react:hover {
   filter: drop-shadow(0 0 2em #18000a);
 }
 
@@ -94,15 +110,20 @@ a.react:hover {
     font-size: 1.2em;
   }
 
-  .hero-section {
+  .hero-section--container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 0.3em;
   }
 
   .hero-section--image {
     width: 420px;
     height: "auto";
+  }
+
+  .hero-section--tags {
+    font-size: 1em;
   }
 
   .section--heading {
