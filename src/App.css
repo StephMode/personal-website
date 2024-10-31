@@ -1,46 +1,141 @@
 #root {
-  max-width: 600px;
+  max-width: 500px;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  font-weight: bold;
+}
+
+.section--heading {
+  font-size: 1.8em;
+}
+
+.page-header--container {
+  margin-bottom: 1em;
+}
+
+.page-header--logo {
   margin: 0;
   padding: 0;
-  /* text-align: center; */
 }
 
-.about-me--section {
-  max-width: 370px;
+.page-title--container {
+  margin-bottom: 2em;
+  max-width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
+.page-title--heading {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.page-title--tags {
+  font-size: 0.9em;
+}
+
+.hero-section--container {
+  max-width: 100%;
+}
+
+.hero-section--image {
+  width: 320px;
+  height: auto;
+}
+
+.hero-section--tags {
+  font-size: 0.8em;
+}
+
+.about-me--container {
+  max-width: 100%;
+}
+
+.about-me--section--paragraph {
+  font-size: 0.9em;
+}
+
+/* CSS for the connect section */
+
+.connect-section--link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  max-width: 100%;
+}
+
+.icon {
+  height: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.icon:hover {
+  filter: drop-shadow(0 0 2em #18000a);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.icon.react:hover {
+  filter: drop-shadow(0 0 2em #18000a);
 }
 
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.connect-section--link {
+  font-weight: 600;
+  color: var(--main-font-color--diesel);
+  text-decoration: inherit;
+}
+
+.connect-section--link:hover {
+  filter: drop-shadow(0 0 2em #18000a);
+}
+.connect-section--link.react:hover {
+  filter: drop-shadow(0 0 2em #18000a);
+}
+
+@media screen and (min-width: 500px) {
+  #root {
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 1.5em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .page-title--heading {
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
   }
-} */
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .page-title--tags {
+    font-size: 1.2em;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .hero-section--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3em;
+  }
 
-.read-the-docs {
-  color: #888;
+  .hero-section--image {
+    width: 420px;
+    height: "auto";
+  }
+
+  .hero-section--tags {
+    font-size: 1em;
+  }
+
+  .section--heading {
+    font-size: 2.3em;
+  }
+
+  .about-me--section--paragraph {
+    font-size: 1.1em;
+    max-width: 65%;
+  }
+
+  .connect-section--link {
+    font-size: 1.1em;
+  }
 }
