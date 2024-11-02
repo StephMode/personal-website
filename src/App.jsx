@@ -4,7 +4,6 @@ import linkedInIcon from "./assets/linkedIn.svg";
 import githubIcon from "./assets/github.svg";
 import mailLogo from "./assets/mail.svg";
 
-import viteLogo from "/vite.svg";
 import portrait from "./assets/images/portrait.jpeg";
 import "./App.css";
 
