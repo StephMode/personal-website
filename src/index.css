@@ -37,7 +37,6 @@ ul {
 body {
   color: var(--main-font-color--diesel);
   background-color: var(--main-bg-color--westar);
-  background-image: url("/src/assets/images/stephmodeBG2.png");
   margin: 0;
   padding: 0;
   min-height: 100vh;
