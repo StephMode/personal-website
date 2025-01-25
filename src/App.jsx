@@ -3,8 +3,6 @@ import reactLogo from "./assets/react.svg";
 import linkedInIcon from "./assets/linkedIn.svg";
 import githubIcon from "./assets/github.svg";
 import mailLogo from "./assets/mail.svg";
-
-import portrait from "./assets/images/portrait.jpeg";
 import "./App.css";
 
 function App() {
@@ -24,20 +22,6 @@ function App() {
           <li className="divider"> / </li>
           <li>HTML & CSS</li>
         </ul>
-      </section>
-      <section className="hero-section--container">
-        <img
-          src={portrait}
-          alt="portrait"
-          width={"auto"}
-          height={"auto"}
-          className="hero-section--image"
-        />
-        <figcaption className="hero-section--tags">
-          conceptual<span> / </span>
-          interdisciplinary<span> / </span>
-          agile
-        </figcaption>
       </section>
 
       <section className="about-me--container">
