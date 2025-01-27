@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 :root {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -41,3 +44,4 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+`;
