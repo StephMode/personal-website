@@ -5,10 +5,6 @@ export default createGlobalStyle`
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 
-  /* for dark/light mode later on*/
-  /* color-scheme: light dark; */
-
-  /* variables */
   --main-font-color--diesel: #18000a;
   --main-bg-color--westar: #e1dfdd;
 

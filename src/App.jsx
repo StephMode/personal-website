@@ -1,10 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import linkedInIcon from "./assets/linkedIn.svg";
 import githubIcon from "./assets/github.svg";
-import mailLogo from "./assets/mail.svg";
 import styled from "styled-components";
-// import "./App.css";
 
 export default function App() {
   return (
