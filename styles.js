@@ -9,7 +9,7 @@ export default createGlobalStyle`
   
   --backgroundColor-primary: #F1EFE4; // alabaster
 
-  --fontSize-title: 104px;
+  --fontSize-title: 54px;
   --fontSize-subTitle: 70px;
   --fontSize-navBar: 24px;
   --fontSize-pageHeading: 186px;
