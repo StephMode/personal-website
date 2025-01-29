@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function () {
+export default function HomePage() {
   return (
     <StyledGridContainer>
       <StyledGridElementName>

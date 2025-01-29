@@ -3,6 +3,7 @@ import githubIcon from "./assets/github.svg";
 import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
+import AboutPage from "./components/pages/AboutPage";
 
 export default function App() {
   return (
@@ -14,21 +15,11 @@ export default function App() {
       <StyledSection id="home">
         <HomePage />
       </StyledSection>
-      <ThemeProvider theme={contrast}>
-        <StyledSection id="about">
-          <h2>About</h2>
-          <p>
-            Background in international sales, project management, and tech
-            partnerships. Currently learning web development at neue fische,
-            building real-world projects.
-          </p>
-          <p>
-            Eager to bring my technical skills and collaborative mindset to a
-            development team, crafting user-centered, visually engaging
-            interfaces.
-          </p>
-        </StyledSection>
-      </ThemeProvider>
+
+      <StyledSection id="about">
+        <AboutPage />
+      </StyledSection>
+
       <StyledSection id="connect">
         <h2>Let's connect</h2>
         <a href="https://github.com/StephMode" target="_blank">
