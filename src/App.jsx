@@ -1,9 +1,10 @@
 import linkedInIcon from "./assets/linkedIn.svg";
 import githubIcon from "./assets/github.svg";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
+import TechStackPage from "./components/pages/TechStackPage";
 
 export default function App() {
   return (
@@ -18,6 +19,10 @@ export default function App() {
 
       <StyledSection id="about">
         <AboutPage />
+      </StyledSection>
+
+      <StyledSection id="techstack">
+        <TechStackPage />
       </StyledSection>
 
       <StyledSection id="connect">
@@ -65,20 +70,12 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 250px; */
-  background-color: ${(props) => props.theme.main};
+
+  @media screen and (max-width: 840px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 `;
-StyledSection.defaultProps = {
-  theme: {
-    main: "var(--backgroundColor-primary)",
-  },
-};
-const defaultTheme = {
-  main: "var(--backgroundColor-primary)",
-};
-const contrast = {
-  main: "#dbc129",
-};
 
 const StyledFooter = styled.footer`
   position: fixed;

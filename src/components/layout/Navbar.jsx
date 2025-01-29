@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Navlink from "../ui/Navlink";
 
 export default function () {
-  const navbarItems = ["Home", "About", "Projects", "Connect"];
+  const navbarItems = ["Home", "About", "Techstack", "Projects", "Connect"];
   const generateNavLink = (navItem) => "#" + navItem.toLowerCase();
 
   return (

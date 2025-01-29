@@ -16,6 +16,7 @@ export default createGlobalStyle`
   --fontSize-sectionHeading: 48px;
   --fontSize-sectionSubHeading: 36px;
   --fontSize-paragraph: 18px;
+  --fontSize-paragraph-mobile: 12px;
 
   --fontWeight-title: 800;
   --fontWeight-subTitle: 600;
