@@ -53,17 +53,14 @@ const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* padding: 0px 150px; */
 `;
 
 const StyledHeader = styled.header`
-  /* border: 1px solid green; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1;
   background-color: var(--backgroundColor-primary);
