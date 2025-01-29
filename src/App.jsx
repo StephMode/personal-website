@@ -5,6 +5,7 @@ import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
 import TechStackPage from "./components/pages/TechStackPage";
+import ProjectsPage from "./components/pages/ProjectsPage";
 
 export default function App() {
   return (
@@ -23,6 +24,10 @@ export default function App() {
 
       <StyledSection id="techstack">
         <TechStackPage />
+      </StyledSection>
+
+      <StyledSection id="projects">
+        <ProjectsPage />
       </StyledSection>
 
       <StyledSection id="connect">
