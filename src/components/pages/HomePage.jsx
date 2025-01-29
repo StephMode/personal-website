@@ -43,6 +43,15 @@ const StyledGridElementTitle = styled.h1`
   font-size: var(--fontSize-title);
   font-weight: var(--fontWeight-title);
   margin: 0;
+  animation: slidein 0.55s ease-in;
+  @keyframes slidein {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 `;
 
 const StlyedGridElementImage = styled.div`
@@ -50,4 +59,13 @@ const StlyedGridElementImage = styled.div`
   background-size: cover;
   width: 100%;
   height: 100%;
+  animation: slidein2 0.55s ease-in;
+  @keyframes slidein2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 `;
