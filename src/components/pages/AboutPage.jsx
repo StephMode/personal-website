@@ -1,4 +1,29 @@
 import styled from "styled-components";
+import SkillRow from "../layout/SkillRow";
+
+const skillGroups = [
+  { id: 1, heading: "Languages", skills: ["JavaScript", "HTML5", "CSS3"] },
+  {
+    id: 2,
+    heading: "Technologies",
+    skills: [
+      "React",
+      "Git",
+      "StyledComponents",
+      "NextJS",
+      "NodeJS",
+      "npm",
+      "TypeScript",
+      "MongoDB",
+      "TailwindCSS",
+    ],
+  },
+  {
+    id: 3,
+    heading: "Tools",
+    skills: ["Visual Studio Code", "GitHub", "Confluence", "JIRA", "Figma"],
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -12,7 +37,14 @@ export default function AboutPage() {
         </StyledGridParagraph>
       </StyledGridElement>
       <StyledGridElement>
-        <h2>Skills</h2>
+        {skillGroups.map((group) => {
+          return (
+            <>
+              <h2>{group.heading}</h2>
+              <SkillRow skills={group.skills} />
+            </>
+          );
+        })}
       </StyledGridElement>
     </StyledGridContainer>
   );
