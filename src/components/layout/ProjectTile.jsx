@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import ProjektLinks from "../ui/ProjektLinks";
 
 export default function ProjectTile({
   projectTitle,
   projectDescription,
   projectTechnologies,
   projectImage,
+  projectRepoLink,
+  projectDemoLink,
 }) {
   return (
     <StyledProjectCard>
-      <StyledImage src={projectImage} alt="img" />
+      <StyledImageLink href={projectDemoLink}>
+        <StyledImage src={projectImage} alt="img" />
+      </StyledImageLink>
       <StyledProjectCardWrapperInside>
         <h2>{projectTitle}</h2>
         <StyledParagraph>{projectDescription}</StyledParagraph>
@@ -17,6 +22,10 @@ export default function ProjectTile({
             return <li>{tech}</li>;
           })}
         </ul>
+        <ProjektLinks
+          projectRepoLink={projectRepoLink}
+          projectDemoLink={projectDemoLink}
+        />
       </StyledProjectCardWrapperInside>
     </StyledProjectCard>
   );
@@ -29,7 +38,7 @@ const StyledProjectCard = styled.div`
   width: 100%;
   height: 300px;
   padding: var(--padding-s);
-  background-color: rgba(251, 251, 251, 45%);
+  background-color: rgba(251, 251, 251, 65%);
   border-radius: 10px;
   transition: all 0.3s linear 0.1s;
   &:hover {
@@ -37,7 +46,7 @@ const StyledProjectCard = styled.div`
   }
   @media screen and (max-width: 840px) {
     flex-direction: column;
-    height: 500px;
+    height: 520px;
     padding: var(--padding-xs);
     align-items: flex-start;
     &:hover {
@@ -63,15 +72,22 @@ const StyledParagraph = styled.p`
   font-size: var(--fontSize-paragraph);
 `;
 
-const StyledImage = styled.img`
-  width: 250px;
-  height: 250px;
+const StyledImageLink = styled.a`
+  display: inline-block;
+  line-height: 0;
   padding: var(--padding-s);
+  @media screen and (max-width: 840px) {
+    padding: var(--padding-xs);
+  }
+`;
+
+const StyledImage = styled.img`
+  display: block;
+  width: 250px;
+  border-radius: 10px;
+
   filter: grayscale(1);
   &:hover {
     filter: grayscale(0);
-  }
-  @media screen and (max-width: 840px) {
-    padding: var(--padding-xs);
   }
 `;

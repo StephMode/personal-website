@@ -69,4 +69,10 @@ body {
 h1, h2, h3, h4 {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
 `;

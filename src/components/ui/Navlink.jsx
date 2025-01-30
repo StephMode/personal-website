@@ -6,8 +6,6 @@ export default function Navlink({ linkText, linkId }) {
 
 const StyledLink = styled.a`
   font-size: var(--fontSize-navBar);
-  text-decoration: none;
-  color: var(--text-color-primary);
   padding: var(--padding-xs);
   width: 200px;
   transition: all 0.3s linear 0.1s;
