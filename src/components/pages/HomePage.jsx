@@ -34,7 +34,6 @@ const StyledGridElementName = styled.h2`
   align-self: flex-end;
   text-align: right;
   font-size: var(--fontSize-subTitle);
-  margin: 0;
   padding-right: var(--padding-s);
 `;
 
@@ -42,7 +41,6 @@ const StyledGridElementTitle = styled.h1`
   background-image: url("/images/grid-pattern.svg");
   font-size: var(--fontSize-title);
   font-weight: var(--fontWeight-title);
-  margin: 0;
   animation: slidein 0.55s ease-in;
   @keyframes slidein {
     0% {
