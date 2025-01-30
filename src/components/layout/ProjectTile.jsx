@@ -27,17 +27,31 @@ const StyledProjectCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-color: rgba(200, 200, 2000, 20%);
+  height: 300px;
+  padding: var(--padding-s);
+  background-color: rgba(251, 251, 251, 45%);
   border-radius: 10px;
+  transition: all 0.3s linear 0.1s;
+  &:hover {
+    box-shadow: 5px 5px 0.75px #bcbbb5;
+  }
+  @media screen and (max-width: 840px) {
+    flex-direction: column;
+    height: 500px;
+    padding: var(--padding-xs);
+    align-items: flex-start;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 `;
 
 const StyledProjectCardWrapperInside = styled.div`
   display: flex;
   flex-direction: column;
-  border: 4px dotted pink;
   width: 100%;
   padding: var(--padding-s);
-  gap: 10px;
+  gap: 25px;
 `;
 
 const StyledParagraph = styled.p`
@@ -45,19 +59,19 @@ const StyledParagraph = styled.p`
   margin: 0;
   display: block;
   width: 100%;
-  /* max-width: 200px; */
   word-wrap: break-word;
   font-size: var(--fontSize-paragraph);
-  @media screen and (max-width: 840px) {
-    font-size: var(--fontSize-paragraph-mobile);
-  }
 `;
 
 const StyledImage = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  padding: var(--padding-s);
   filter: grayscale(1);
   &:hover {
     filter: grayscale(0);
+  }
+  @media screen and (max-width: 840px) {
+    padding: var(--padding-xs);
   }
 `;
