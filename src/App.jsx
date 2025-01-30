@@ -73,10 +73,10 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 840px) {
+  /* @media screen and (max-width: 840px) {
     margin-top: 50px;
     margin-bottom: 50px;
-  }
+  } */
 `;
 
 const StyledFooter = styled.footer`

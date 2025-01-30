@@ -65,4 +65,8 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
 `;
