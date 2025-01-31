@@ -8,7 +8,7 @@ import ConnectPage from "./components/pages/ConnectPage";
 
 export default function App() {
   return (
-    <StyledMain>
+    <main>
       <StyledHeader>
         <Navbar />
       </StyledHeader>
@@ -33,15 +33,9 @@ export default function App() {
         <ConnectPage />
       </StyledSection>
       <StyledFooter>made by me</StyledFooter>
-    </StyledMain>
+    </main>
   );
 }
-
-const StyledMain = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -60,11 +54,7 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* @media screen and (max-width: 840px) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  } */
+  overflow: hidden;
 `;
 
 const StyledFooter = styled.footer`
