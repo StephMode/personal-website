@@ -1,11 +1,10 @@
-import linkedInIcon from "./assets/linkedIn.svg";
-import githubIcon from "./assets/github.svg";
 import styled from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
 import TechStackPage from "./components/pages/TechStackPage";
 import ProjectsPage from "./components/pages/ProjectsPage";
+import ConnectPage from "./components/pages/ConnectPage";
 
 export default function App() {
   return (
@@ -31,18 +30,7 @@ export default function App() {
       </StyledSection>
 
       <StyledSection id="connect">
-        <h2>Let's connect</h2>
-        <a href="https://github.com/StephMode" target="_blank">
-          <img src={githubIcon} alt="github logo" height={40} width={40} />
-          <span> / </span>
-          My projects & how I work
-        </a>
-        <br />
-        <a href="https://www.linkedin.com/in/stephanmodel" target="_blank">
-          <img src={linkedInIcon} alt="linkedin logo" height={40} width={40} />
-          <span> / </span>
-          My professional journey
-        </a>
+        <ConnectPage />
       </StyledSection>
       <StyledFooter>made by me</StyledFooter>
     </StyledMain>
