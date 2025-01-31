@@ -6,8 +6,14 @@ export default createGlobalStyle`
   font-weight: 400;
 
   --text-color-primary: #171400; // smokey black
-  
+  --text-color-accent-light: rgba(251,251,251,75%); // white with alpha value
+
   --backgroundColor-primary: #F1EFE4; // alabaster
+
+  --backgroundColor-badge--theme-skill: rgba(23, 20, 0, 20%);
+  --backgroundColor-badge-hover--theme-skill: rgba(23, 20, 0, 5%);
+  --backgroundColor-badge--theme-technology: rgba(23, 20, 0, 65%);
+  --backgroundColor-badge-hover--theme-technology: rgba(23, 20, 0, 45%);
 
   --fontSize-title: 76px;
   --fontSize-subTitle: 46px;

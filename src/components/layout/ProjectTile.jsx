@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProjektLinks from "../ui/ProjektLinks";
+import Badge from "../ui/Badge";
 
 export default function ProjectTile({
   projectTitle,
@@ -19,7 +20,7 @@ export default function ProjectTile({
         <StyledParagraph>{projectDescription}</StyledParagraph>
         <ul>
           {projectTechnologies.map((tech) => {
-            return <li>{tech}</li>;
+            return <Badge tech={tech} badgeTheme={"tech"} />;
           })}
         </ul>
         <ProjektLinks
