@@ -18,7 +18,13 @@ export default function SocialLinks() {
   return (
     <>
       {socialLinks.map((link) => {
-        return <Button link={link} iconType={link.iconType} />;
+        return (
+          <Button
+            buttonType={"socialLink"}
+            link={link}
+            iconType={link.iconType}
+          />
+        );
       })}
     </>
   );

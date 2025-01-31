@@ -39,7 +39,7 @@ const StyledProjectCard = styled.div`
   width: 100%;
   height: 300px;
   padding: var(--padding-s);
-  background-color: rgba(251, 251, 251, 65%);
+  background-color: var(--backgroundColor-element-light);
   border-radius: 10px;
   transition: all 0.3s linear 0.1s;
   &:hover {

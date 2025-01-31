@@ -9,6 +9,7 @@ export default createGlobalStyle`
   --text-color-accent-light: rgba(251,251,251,75%); // white with alpha value
 
   --backgroundColor-primary: #F1EFE4; // alabaster
+  --backgroundColor-element-light: rgba(251, 251, 251, 65%); // white with alpha
 
   --backgroundColor-badge--theme-skill: rgba(23, 20, 0, 20%);
   --backgroundColor-badge-hover--theme-skill: rgba(23, 20, 0, 5%);
@@ -79,6 +80,46 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none;
   color: var(--text-color-primary);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  cursor: pointer;
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button {
+  font-size: var(--button-font-size-main);
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
 }
 
 `;
