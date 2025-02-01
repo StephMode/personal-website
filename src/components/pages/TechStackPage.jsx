@@ -72,6 +72,7 @@ const StyledGridElement = styled.div`
   border: 1px solid black;
   box-shadow: 5px 5px;
   border-radius: 10px;
+  background-color: var(--backgroundColor-element-light);
   &:nth-child(2) {
     justify-self: end;
   }

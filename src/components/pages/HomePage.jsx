@@ -57,6 +57,7 @@ const StlyedGridElementImage = styled.div`
   background-size: cover;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   animation: slidein2 0.55s ease-in;
   @keyframes slidein2 {
     0% {
