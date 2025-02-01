@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import SkillRow from "../layout/SkillRow";
+import styled, { ThemeProvider } from "styled-components";
 
 export default function AboutPage() {
   return (
@@ -12,18 +11,22 @@ export default function AboutPage() {
           projects. This experience made it clear to me that I wanted to be even
           closer to software development.
         </StyledGridParagraph>
-        <StyledGridParagraph>
-          That's why I decided to dedicate myself fully to learning web
-          development and make it my profession. In doing so, I have turned my
-          fascination and passion for learning and constant challenge into
-          action.
-        </StyledGridParagraph>
+      </StyledGridElement>
+      <ThemeProvider theme={right}>
+        <StyledGridElement>
+          <StyledGridParagraph>
+            That's why I decided to dedicate myself fully to learning web
+            development and make it my profession. In doing so, I have turned my
+            fascination and passion for learning and constant challenge into
+            action.
+          </StyledGridParagraph>
+        </StyledGridElement>
+      </ThemeProvider>
+      <StyledGridElement>
         <StyledGridParagraph>
           Now I am highly motivated to bring my technical skills and soft skills
-          to a team of developers and work on projects and products.
-        </StyledGridParagraph>
-        <StyledGridParagraph>
-          I am a passionate team player and able to learn new topics quickly and
+          to a team of developers and work on projects and products. I am a
+          passionate team player and able to learn new topics quickly and
           effectively. Thanks to my professional experience, I also have strong
           communication skills, a focus on results and the ability to organize
           myself.
@@ -35,35 +38,48 @@ export default function AboutPage() {
 
 const StyledGridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, minmax(600px, 1fr));
-  grid-template-rows: repeat(1, minmax(300px, 1fr));
-  justify-items: center;
-  align-items: center;
-  @media screen and (max-width: 840px) {
-    grid-template-columns: repeat(1, minmax(600px, 1fr));
-    grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
+  width: 600px;
+  gap: 25px;
+  @media screen and (max-width: 640px) {
+    max-width: 400px;
+  }
+  @media screen and (max-width: 400px) {
+    max-width: 330px;
+    gap: 10px;
+    grid-template-rows: repeat(3);
   }
 `;
 
 const StyledGridElement = styled.div`
-  justify-self: center;
-  text-align: center;
-  margin: 0;
-  max-width: 600px;
+  justify-self: ${(props) => props.theme.justifySelf};
+  padding: var(--padding-s);
+  border: 1px solid black;
+  max-width: 400px;
+  box-shadow: 5px 5px;
+  border-radius: 10px;
+  @media screen and (max-width: 400px) {
+    justify-self: start;
+  }
 `;
+StyledGridElement.defaultProps = {
+  theme: {
+    justifySelf: "start",
+  },
+};
+const right = {
+  justifySelf: "end",
+};
 
 const StyledGridParagraph = styled.p`
-  justify-self: center;
-  align-self: center;
-  text-align: left;
-  margin: 0 0 20px 0;
-  padding: var(--padding-xs);
+  text-align: justify;
+  margin: 10px 5px;
   display: block;
-  width: 100%;
   max-width: inherit;
   word-wrap: break-word;
   font-size: var(--fontSize-paragraph);
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 400px) {
     font-size: var(--fontSize-paragraph-mobile);
+    margin: 5px 0;
   }
 `;

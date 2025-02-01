@@ -23,7 +23,7 @@ export default createGlobalStyle`
   --fontSize-sectionHeading: 48px;
   --fontSize-sectionSubHeading: 36px;
   --fontSize-paragraph: 18px;
-  --fontSize-paragraph-mobile: 12px;
+  --fontSize-paragraph-mobile: 14px;
 
   --fontWeight-title: 800;
   --fontWeight-subTitle: 600;
@@ -48,6 +48,8 @@ export default createGlobalStyle`
 
 body {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Global list stylings */
