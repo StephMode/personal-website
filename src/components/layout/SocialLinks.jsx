@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Button from "../ui/Button";
 
 const socialLinks = [
@@ -9,9 +8,12 @@ const socialLinks = [
   { iconType: "github", link: "https://github.com/StephMode" },
   {
     iconType: "blsky",
-    link: "https://www.linkedin.com/in/stephanmodel",
+    link: "https://bsky.app/profile/stephmode.bsky.social",
   },
-  { iconType: "xing", link: "https://github.com/StephMode" },
+  {
+    iconType: "xing",
+    link: "https://www.xing.com/profile/Stephan_Model3/web_profiles?expandNeffi=true",
+  },
 ];
 
 export default function SocialLinks() {
