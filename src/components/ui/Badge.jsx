@@ -15,8 +15,12 @@ const StyledListItem = styled.li`
   border-radius: 10px;
   font-weight: 300;
   transition: all 0.2s linear 0.1s;
+  font-size: var(--fontSize-badge);
   &:hover {
     background-color: var(${(props) => props.theme.hoverColor});
+  }
+  @media screen and (max-width: 400px) {
+    font-size: var(--fontSize-badge-mobile);
   }
 `;
 StyledListItem.defaultProps = {
