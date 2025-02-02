@@ -9,4 +9,5 @@ const StyledHeading = styled.h1`
   text-shadow: 3.5px 3.5px 0 black;
   color: #dcd7bc;
   font-size: var(--fontSize-sectionHeading);
+  z-index: 1;
 `;
