@@ -23,7 +23,7 @@ export default function Button({ buttonType, link, iconType }) {
   return (
     <button>
       {buttonType === "socialLink" && (
-        <a href={link.link}>
+        <a href={link.link} target="blank">
           <StyledIcon src={buttonIconDictionary.returnIcon()} />
         </a>
       )}

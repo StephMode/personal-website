@@ -5,11 +5,11 @@ import arrowIcon from "/src/assets/arrow-right-up-line.svg";
 export default function ProjektLinks({ projectRepoLink, projectDemoLink }) {
   return (
     <StyledLinkWrapper>
-      <StyledLink href={projectRepoLink}>
+      <StyledLink href={projectRepoLink} target="blank">
         <StyledIcon src={githubIcon} />
         Link to Repo
       </StyledLink>
-      <StyledLink href={projectDemoLink}>
+      <StyledLink href={projectDemoLink} target="blank">
         <StyledIcon src={arrowIcon} />
         Link to Demo
       </StyledLink>

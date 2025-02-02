@@ -55,7 +55,7 @@ const StyledGridElement = styled.div`
 `;
 
 const StyledHeadline = styled.h2`
-  margin: 0 10px;
+  margin: 5px 0 0 10px;
 `;
 
 const StyledParagraph = styled.p`
