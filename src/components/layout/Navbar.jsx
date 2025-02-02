@@ -6,7 +6,7 @@ import Navlink from "../ui/Navlink";
 // - Navbar (will remain a static bar on all viewports for the moment)
 
 export default function () {
-  const navbarItems = ["Home", "About", "Techstack", "Projects", "Connect"];
+  const navbarItems = ["Home", "About", "Skills", "Projects", "Connect"];
   const generateNavLink = (navItem) => "#" + navItem.toLowerCase();
 
   return (

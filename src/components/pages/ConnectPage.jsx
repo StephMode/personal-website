@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import SocialLinks from "../layout/SocialLinks";
+import SectionHeading from "../ui/SectionHeading";
 
 export default function ConnectPage() {
   return (
-    <StyledGridContainer>
-      <SocialLinks />
-    </StyledGridContainer>
+    <>
+      <SectionHeading sectionName={"Let's connect"} />
+      <StyledGridContainer>
+        <SocialLinks />
+      </StyledGridContainer>
+    </>
   );
 }
 

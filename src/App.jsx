@@ -21,7 +21,7 @@ export default function App() {
         <AboutPage />
       </StyledSection>
 
-      <StyledSection id="techstack">
+      <StyledSection id="skills">
         <TechStackPage />
       </StyledSection>
 
@@ -55,6 +55,7 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  gap: 10px;
 `;
 
 const StyledFooter = styled.footer`

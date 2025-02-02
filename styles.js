@@ -7,6 +7,7 @@ export default createGlobalStyle`
 
   --text-color-primary: #171400; // smokey black
   --text-color-accent-light: rgba(251,251,251,75%); // white with alpha value
+  --text-color-heading-accent: #DCD7BC; //pearl, darker shade of alabaster
 
   --backgroundColor-primary: #F1EFE4; // alabaster
   --backgroundColor-element-light: rgba(251, 251, 251, 65%); // white with alpha
@@ -19,6 +20,7 @@ export default createGlobalStyle`
   --fontSize-title: 76px;
   --fontSize-subTitle: 46px;
   --fontSize-navBar: 24px;
+  --fontSize-navBar-mobile: 16px;
   --fontSize-pageHeading: 186px;
   --fontSize-sectionHeading: 48px;
   --fontSize-sectionSubHeading: 36px;

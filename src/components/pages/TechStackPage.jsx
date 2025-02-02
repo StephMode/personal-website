@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SkillRow from "../layout/SkillRow";
+import SectionHeading from "../ui/SectionHeading";
 
 const skillGroups = [
   {
@@ -37,17 +38,20 @@ const skillGroups = [
 
 export default function TechStackPage() {
   return (
-    <StyledGridContainer>
-      {skillGroups.map((group) => {
-        return (
-          <StyledGridElement>
-            <StyledHeadline>{group.heading}</StyledHeadline>
-            <StyledParagraph>{group.paragraph}</StyledParagraph>
-            <SkillRow skills={group.skills} />
-          </StyledGridElement>
-        );
-      })}
-    </StyledGridContainer>
+    <>
+      <SectionHeading sectionName={"Tech Stack"} />
+      <StyledGridContainer>
+        {skillGroups.map((group) => {
+          return (
+            <StyledGridElement>
+              <StyledHeadline>{group.heading}</StyledHeadline>
+              <StyledParagraph>{group.paragraph}</StyledParagraph>
+              <SkillRow skills={group.skills} />
+            </StyledGridElement>
+          );
+        })}
+      </StyledGridContainer>
+    </>
   );
 }
 

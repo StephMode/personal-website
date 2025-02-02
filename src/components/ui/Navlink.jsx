@@ -12,4 +12,7 @@ const StyledLink = styled.a`
   &:hover {
     text-shadow: 2px 2px 0.2px #bcbbb5;
   }
+  @media screen and (max-width: 450px) {
+    font-size: var(--fontSize-navBar-mobile);
+  }
 `;

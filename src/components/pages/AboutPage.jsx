@@ -1,8 +1,10 @@
 import styled, { ThemeProvider } from "styled-components";
+import SectionHeading from "../ui/SectionHeading";
 
 export default function AboutPage() {
   return (
     <StyledGridContainer>
+      <SectionHeading sectionName={"About"} />
       <StyledGridElement>
         <StyledGridParagraph>
           I am fascinated by web technologies, the digital economy and design.

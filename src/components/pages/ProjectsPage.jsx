@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProjectTile from "../layout/ProjectTile";
+import SectionHeading from "../ui/SectionHeading";
 
 const projects = [
   {
@@ -24,20 +25,23 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <StyledProjectTileContainer>
-      {projects.map((project) => {
-        return (
-          <ProjectTile
-            projectTitle={project.title}
-            projectDescription={project.description}
-            projectTechnologies={project.technologies}
-            projectImage={project.imageURL}
-            projectRepoLink={project.repoLinkURL}
-            projectDemoLink={project.demoLinkURL}
-          />
-        );
-      })}
-    </StyledProjectTileContainer>
+    <>
+      <SectionHeading sectionName={"Projects"} />
+      <StyledProjectTileContainer>
+        {projects.map((project) => {
+          return (
+            <ProjectTile
+              projectTitle={project.title}
+              projectDescription={project.description}
+              projectTechnologies={project.technologies}
+              projectImage={project.imageURL}
+              projectRepoLink={project.repoLinkURL}
+              projectDemoLink={project.demoLinkURL}
+            />
+          );
+        })}
+      </StyledProjectTileContainer>
+    </>
   );
 }
 
