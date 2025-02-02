@@ -47,6 +47,7 @@ export default createGlobalStyle`
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -68,7 +69,6 @@ ul {
   gap: 0.4rem;
 }
 
-/* Montserrat import */
 @font-face {
   font-family: "Outfit";
   src: url("/public/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
@@ -96,22 +96,20 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  font-size: 100%; 
+  line-height: 1.15;
+  margin: 0;
   cursor: pointer;
 }
 
 button,
 input {
-  /* 1 */
   overflow: visible;
 }
 
 button,
 select {
-  /* 1 */
   text-transform: none;
 }
 
