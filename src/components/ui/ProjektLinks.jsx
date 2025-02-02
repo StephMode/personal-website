@@ -30,6 +30,9 @@ const StyledLink = styled.a`
   &:hover {
     transform: translate(0px, -5px);
   }
+  @media screen and (max-width: 400px) {
+    font-size: var(--fontSize-badge-mobile);
+  }
 `;
 
 const StyledIcon = styled.img`

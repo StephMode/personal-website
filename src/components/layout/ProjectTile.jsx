@@ -34,34 +34,28 @@ export default function ProjectTile({
 
 const StyledProjectCard = styled.div`
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  height: 300px;
+  max-height: 300px;
   padding: var(--padding-s);
   background-color: var(--backgroundColor-element-light);
   border-radius: 10px;
-  transition: all 0.3s linear 0.1s;
-  &:hover {
-    box-shadow: 5px 5px 0.75px #bcbbb5;
-  }
+  box-shadow: 5px 5px 0.75px #bcbbb5;
   @media screen and (max-width: 840px) {
-    flex-direction: column;
-    height: 520px;
     padding: var(--padding-xs);
-    align-items: flex-start;
-    &:hover {
-      box-shadow: none;
-    }
   }
 `;
 
 const StyledProjectCardWrapperInside = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: var(--padding-s);
   gap: 25px;
+  @media screen and (max-width: 800px) {
+    gap: 15px;
+  }
+  @media screen and (max-width: 450px) {
+    gap: 5px;
+  }
 `;
 
 const StyledParagraph = styled.p`
@@ -71,6 +65,9 @@ const StyledParagraph = styled.p`
   width: 100%;
   word-wrap: break-word;
   font-size: var(--fontSize-paragraph);
+  @media screen and (max-width: 840px) {
+    font-size: var(--fontSize-paragraph-mobile);
+  }
 `;
 
 const StyledImageLink = styled.a`
@@ -84,11 +81,17 @@ const StyledImageLink = styled.a`
 
 const StyledImage = styled.img`
   display: block;
-  width: 250px;
+  max-width: 250px;
   border-radius: 10px;
 
   filter: grayscale(1);
   &:hover {
     filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    max-width: 150px;
+  }
+  @media screen and (max-width: 450px) {
+    display: none;
   }
 `;
