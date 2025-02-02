@@ -5,16 +5,16 @@ import blueskyIcon from "/src/assets/bluesky-fill.svg";
 import xingIcon from "/src/assets/xing-fill.svg";
 
 export default function Button({ buttonType, link, iconType }) {
-  const buttonLinkIcons = {
-    labels: [
+  const buttonIconDictionary = {
+    icons: [
       { labelID: "linkedIn", buttonIcon: linkedInIcon },
       { labelID: "github", buttonIcon: githubIcon },
       { labelID: "blsky", buttonIcon: blueskyIcon },
       { labelID: "xing", buttonIcon: xingIcon },
     ],
     returnIcon() {
-      const buttonIconFinder = this.labels.find(
-        (label) => label.labelID === iconType
+      const buttonIconFinder = this.icons.find(
+        (icon) => icon.labelID === iconType
       );
       return buttonIconFinder ? buttonIconFinder.buttonIcon : "";
     },
@@ -24,7 +24,7 @@ export default function Button({ buttonType, link, iconType }) {
     <button>
       {buttonType === "socialLink" && (
         <a href={link.link}>
-          <StyledIcon src={buttonLinkIcons.returnIcon()} />
+          <StyledIcon src={buttonIconDictionary.returnIcon()} />
         </a>
       )}
     </button>
