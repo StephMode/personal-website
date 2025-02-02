@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import Navlink from "../ui/Navlink";
 
-//TODO:
-// => then I need to just make sure that the follwing compos are also sufficiently responsive
-// - Navbar (will remain a static bar on all viewports for the moment)
-
 export default function () {
   const navbarItems = ["Home", "About", "Skills", "Projects", "Connect"];
   const generateNavLink = (navItem) => "#" + navItem.toLowerCase();

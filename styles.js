@@ -12,6 +12,9 @@ export default createGlobalStyle`
   --backgroundColor-primary: #F1EFE4; // alabaster
   --backgroundColor-element-light: rgba(251, 251, 251, 65%); // white with alpha
 
+  --boxShadow-color-primary: #2b2927; // jet-black --for non-interactive elements
+  --boxShadow-color-light: #C5C4BF; // silver --for interactive elements
+
   --backgroundColor-badge--theme-skill: rgba(23, 20, 0, 20%);
   --backgroundColor-badge-hover--theme-skill: rgba(23, 20, 0, 5%);
   --backgroundColor-badge--theme-technology: rgba(23, 20, 0, 65%);

@@ -8,7 +8,7 @@ export default function AboutPage() {
       <StyledGridElement>
         <StyledGridParagraph>
           I am fascinated by web technologies, the digital economy and design.
-          Before pusuing web development, I had the opportunity to explore the
+          Before pursuing web development, I had the opportunity to explore the
           venues of Software Sales, advised users and managed implementation
           projects. This experience made it clear to me that I wanted to be even
           closer to software development.
@@ -58,7 +58,7 @@ const StyledGridElement = styled.div`
   padding: var(--padding-s);
   border: 1px solid black;
   max-width: 400px;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px var(--boxShadow-color-primary);
   border-radius: 10px;
   background-color: var(--backgroundColor-element-light);
   @media screen and (max-width: 400px) {

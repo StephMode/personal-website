@@ -26,6 +26,7 @@ const StyledLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   transition: all 0.15s ease-in-out 0.2s;
   &:hover {
     transform: translate(0px, -5px);

@@ -41,7 +41,7 @@ const StyledGridContainer = styled.div`
 const StyledGridElement = styled.div`
   max-width: 80%;
   border: 1px solid black;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px var(--boxShadow-color-primary);
   border-radius: 10px;
   background-color: var(--backgroundColor-element-light);
   &:nth-child(2) {
