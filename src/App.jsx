@@ -1,74 +1,79 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import linkedInIcon from "./assets/linkedIn.svg";
-import githubIcon from "./assets/github.svg";
-import mailLogo from "./assets/mail.svg";
-import styled from "styled-components";
-// import "./App.css";
+import styled, { ThemeProvider } from "styled-components";
+import Navbar from "./components/layout/Navbar";
+import HomePage from "./components/pages/HomePage";
+import AboutPage from "./components/pages/AboutPage";
+import TechStackPage from "./components/pages/TechStackPage";
+import ProjectsPage from "./components/pages/ProjectsPage";
+import ConnectPage from "./components/pages/ConnectPage";
 
 export default function App() {
   return (
-    <StyledMain>
-      <header>
-        <p>// STEPHAN MODEL</p>
-      </header>
-      <StyledSection>
-        <h1>
-          Front End <br /> Developer
-        </h1>
-        <ul>
-          <li>React</li>
-          <li> / </li>
-          <li>Git & GitHub</li>
-          <li> / </li>
-          <li>HTML & CSS</li>
-        </ul>
+    <main>
+      <StyledHeader>
+        <Navbar />
+      </StyledHeader>
+
+      <StyledSection id="home">
+        <HomePage />
       </StyledSection>
 
-      <StyledSection>
-        <h2>About</h2>
-        <p>
-          Background in international sales, project management, and tech
-          partnerships. Currently learning web development at neue fische,
-          building real-world projects.
-        </p>
-        <p>
-          Eager to bring my technical skills and collaborative mindset to a
-          development team, crafting user-centered, visually engaging
-          interfaces.
-        </p>
+      <StyledSection id="about">
+        <AboutPage />
       </StyledSection>
 
-      <StyledSection>
-        <h2>Let's connect</h2>
-        <a href="https://github.com/StephMode" target="_blank">
-          <img src={githubIcon} alt="github logo" height={40} width={40} />
-          <span> / </span>
-          My projects & how I work
-        </a>
-        <br />
-        <a href="https://www.linkedin.com/in/stephanmodel" target="_blank">
-          <img src={linkedInIcon} alt="linkedin logo" height={40} width={40} />
-          <span> / </span>
-          My professional journey
-        </a>
+      <StyledSection id="skills">
+        <TechStackPage />
       </StyledSection>
-    </StyledMain>
+
+      <StyledSection id="projects">
+        <ProjectsPage />
+      </StyledSection>
+
+      <ThemeProvider theme={connectPage}>
+        <StyledSection id="connect">
+          <ConnectPage />
+        </StyledSection>
+      </ThemeProvider>
+
+      <StyledFooter>
+        Built with React & Vite | Stephan Model | 2025
+      </StyledFooter>
+    </main>
   );
 }
 
-const StyledMain = styled.main`
+const StyledHeader = styled.header`
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  padding: 0px 150px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--backgroundColor-primary);
 `;
 
 const StyledSection = styled.section`
-  height: 80vh;
+  height: ${(props) => props.theme.height};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  gap: 10px;
+`;
+StyledSection.defaultProps = {
+  theme: {
+    height: "100vh",
+  },
+};
+const connectPage = {
+  height: "85vh",
+};
+
+const StyledFooter = styled.footer`
+  position: relative;
+  bottom: -10;
+  z-index: 1;
+  margin: 25px;
 `;
