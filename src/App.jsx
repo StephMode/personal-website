@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
@@ -29,10 +29,15 @@ export default function App() {
         <ProjectsPage />
       </StyledSection>
 
-      <StyledSection id="connect">
-        <ConnectPage />
-      </StyledSection>
-      <StyledFooter>made by me</StyledFooter>
+      <ThemeProvider theme={connectPage}>
+        <StyledSection id="connect">
+          <ConnectPage />
+        </StyledSection>
+      </ThemeProvider>
+
+      <StyledFooter>
+        Built with React & Vite | Stephan Model | 2025
+      </StyledFooter>
     </main>
   );
 }
@@ -49,7 +54,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledSection = styled.section`
-  height: 100vh;
+  height: ${(props) => props.theme.height};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,9 +62,18 @@ const StyledSection = styled.section`
   overflow: hidden;
   gap: 10px;
 `;
+StyledSection.defaultProps = {
+  theme: {
+    height: "100vh",
+  },
+};
+const connectPage = {
+  height: "85vh",
+};
 
 const StyledFooter = styled.footer`
-  position: fixed;
-  bottom: 0;
-  margin: 10px 25px;
+  position: relative;
+  bottom: -10;
+  z-index: 1;
+  margin: 25px;
 `;
