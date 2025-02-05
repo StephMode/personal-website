@@ -12,7 +12,7 @@ export default function ProjectTile({
 }) {
   return (
     <StyledProjectCard>
-      <StyledImageLink href={projectDemoLink}>
+      <StyledImageLink href={projectDemoLink} target="blank">
         <StyledImage src={projectImage} alt="img" />
       </StyledImageLink>
       <StyledProjectCardWrapperInside>
