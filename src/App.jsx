@@ -8,37 +8,37 @@ import ConnectPage from "./components/pages/ConnectPage";
 
 export default function App() {
   return (
-    <main>
+    <>
       <StyledHeader>
         <Navbar />
       </StyledHeader>
-
-      <StyledSection id="home">
-        <HomePage />
-      </StyledSection>
-
-      <StyledSection id="about">
-        <AboutPage />
-      </StyledSection>
-
-      <StyledSection id="skills">
-        <TechStackPage />
-      </StyledSection>
-
-      <StyledSection id="projects">
-        <ProjectsPage />
-      </StyledSection>
-
-      <ThemeProvider theme={connectPage}>
-        <StyledSection id="connect">
-          <ConnectPage />
+      <main>
+        <StyledSection id="home">
+          <HomePage />
         </StyledSection>
-      </ThemeProvider>
 
+        <StyledSection id="about">
+          <AboutPage />
+        </StyledSection>
+
+        <StyledSection id="skills">
+          <TechStackPage />
+        </StyledSection>
+
+        <StyledSection id="projects">
+          <ProjectsPage />
+        </StyledSection>
+
+        <ThemeProvider theme={connectPage}>
+          <StyledSection id="connect">
+            <ConnectPage />
+          </StyledSection>
+        </ThemeProvider>
+      </main>
       <StyledFooter>
         Built with React & Vite | Stephan Model | 2025
       </StyledFooter>
-    </main>
+    </>
   );
 }
 
