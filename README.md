@@ -1,3 +1,10 @@
+# About this Project
+
+This website serves as a showcase of who I am as a software professional and my projects.
+
+It's build using React, Vite, StyledComponents and npm primarily.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
