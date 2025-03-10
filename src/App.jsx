@@ -13,20 +13,22 @@ export default function App() {
         <Navbar />
       </StyledHeader>
       <main>
-        <StyledSection id="home">
-          <HomePage />
-        </StyledSection>
+        <ThemeProvider theme={homePage}>
+          <StyledSection id="home">
+            <HomePage />
+          </StyledSection>
+        </ThemeProvider>
 
-        <StyledSection id="about">
-          <AboutPage />
+        <StyledSection id="projects">
+          <ProjectsPage />
         </StyledSection>
 
         <StyledSection id="skills">
           <TechStackPage />
         </StyledSection>
 
-        <StyledSection id="projects">
-          <ProjectsPage />
+        <StyledSection id="about">
+          <AboutPage />
         </StyledSection>
 
         <ThemeProvider theme={connectPage}>
@@ -44,9 +46,6 @@ export default function App() {
 
 const StyledHeader = styled.header`
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -59,16 +58,23 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  padding-top: 40px;
   gap: 10px;
+  @media screen and (max-width: 840px) {
+    height: 100%;
+  }
 `;
+
 StyledSection.defaultProps = {
   theme: {
-    height: "100vh",
+    height: "",
   },
 };
+const homePage = {
+  height: "100vh",
+};
 const connectPage = {
-  height: "85vh",
+  height: "90vh",
 };
 
 const StyledFooter = styled.footer`

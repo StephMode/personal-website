@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "Glossary Wizard --⌨️WIP",
+    description:
+      "Tool for small develeopment teams and individual developers to create project glossaries and documentations on the fly.",
+    technologies: ["TypeScript", "TDD", "OOP"],
+    imageURL: "/images/project-showcase-glossary-wizard.png",
+    repoLinkURL: "https://github.com/StephMode/plant-pal",
+    demoLinkURL: "https://rooted-capstone.vercel.app/",
+  },
+  {
+    title: "Personal Website",
+    description:
+      "My personal portfolio website. The website you are currently visiting.",
+    technologies: ["React", "StyledComponents", "CSS Animations"],
+    imageURL: "/images/project-showcase-portfolio-website.png",
+    repoLinkURL: "https://github.com/StephMode/plant-pal",
+    demoLinkURL: "https://rooted-capstone.vercel.app/",
+  },
+  {
     title: "rooted",
     description:
       "Digital handbook with tips on plants and plant care. Final project of my Web Development Bootcamp. Development in a team of 4 people using agile methodology.",

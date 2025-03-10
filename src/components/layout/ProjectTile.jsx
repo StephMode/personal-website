@@ -40,8 +40,14 @@ const StyledProjectCard = styled.div`
   background-color: var(--backgroundColor-element-light);
   border-radius: 10px;
   box-shadow: 5px 5px 0.75px var(--boxShadow-color-light);
+  &:hover {
+    box-shadow: 5px 5px 0.75px var(--boxShadow-color-primary);
+    transition: all 0.15s ease-in-out 0.2s;
+  }
   @media screen and (max-width: 840px) {
     padding: var(--padding-xs);
+    width: 100%;
+    box-shadow: 5px 5px 0.75px var(--boxShadow-color-primary);
   }
 `;
 
@@ -84,10 +90,6 @@ const StyledImage = styled.img`
   max-width: 250px;
   border-radius: 10px;
 
-  filter: grayscale(1);
-  &:hover {
-    filter: grayscale(0);
-  }
   @media screen and (max-width: 800px) {
     max-width: 150px;
   }
