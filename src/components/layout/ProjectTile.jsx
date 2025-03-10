@@ -42,6 +42,7 @@ const StyledProjectCard = styled.div`
   box-shadow: 5px 5px 0.75px var(--boxShadow-color-light);
   @media screen and (max-width: 840px) {
     padding: var(--padding-xs);
+    width: 100%;
   }
 `;
 

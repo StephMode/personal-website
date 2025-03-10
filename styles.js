@@ -55,7 +55,6 @@ export default createGlobalStyle`
 }
 
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -79,7 +78,6 @@ body {
   background-color: var(--backgroundColor-primary);
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
