@@ -24,8 +24,8 @@ const StyledGridContainer = styled.div`
   grid-template-rows: repeat(2, minmax(300px, 1fr));
 
   @media screen and (max-width: 840px) {
-    grid-template-columns: repeat(1, minmax(100px, 1fr));
-    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
   }
 `;
 
@@ -35,6 +35,10 @@ const StyledGridElementName = styled.h2`
   text-align: right;
   font-size: var(--fontSize-subTitle);
   padding-right: var(--padding-s);
+  @media screen and (max-width: 840px) {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
 `;
 
 const StyledGridElementTitle = styled.h1`
@@ -49,6 +53,10 @@ const StyledGridElementTitle = styled.h1`
     100% {
       transform: translateX(0%);
     }
+  }
+  @media screen and (max-width: 840px) {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
   }
 `;
 
@@ -66,5 +74,9 @@ const StlyedGridElementImage = styled.div`
     100% {
       transform: translateX(0%);
     }
+  }
+  @media screen and (max-width: 840px) {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
   }
 `;
