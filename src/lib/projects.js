@@ -5,8 +5,8 @@ export const projects = [
       "Tool for small develeopment teams and individual developers to create project glossaries and documentations on the fly.",
     technologies: ["TypeScript", "TDD", "OOP"],
     imageURL: "/images/project-showcase-glossary-wizard.png",
-    repoLinkURL: "https://github.com/StephMode/plant-pal",
-    demoLinkURL: "https://rooted-capstone.vercel.app/",
+    repoLinkURL: "https://github.com/StephMode/glossary-wizard/",
+    demoLinkURL: "https://glossary-wizard.vercel.app/",
   },
   {
     title: "Personal Website",
@@ -14,8 +14,8 @@ export const projects = [
       "My personal portfolio website. The website you are currently visiting.",
     technologies: ["React", "StyledComponents", "CSS Animations"],
     imageURL: "/images/project-showcase-portfolio-website.png",
-    repoLinkURL: "https://github.com/StephMode/plant-pal",
-    demoLinkURL: "https://rooted-capstone.vercel.app/",
+    repoLinkURL: "https://github.com/StephMode/personal-website",
+    demoLinkURL: "https://www.stephanmodel.dev/",
   },
   {
     title: "rooted",
