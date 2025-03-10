@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: "Glossary Wizard (Work in Progress)",
+    title: "Glossary Wizard --⌨️WIP",
     description:
-      "Tool for small dev teams and individual developers to create project glossaries and documentations on the fly.",
+      "Tool for small develeopment teams and individual developers to create project glossaries and documentations on the fly.",
     technologies: ["TypeScript", "TDD", "OOP"],
     imageURL: "/images/project-showcase-glossary-wizard.png",
     repoLinkURL: "https://github.com/StephMode/plant-pal",
