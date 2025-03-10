@@ -17,16 +17,16 @@ export default function App() {
           <HomePage />
         </StyledSection>
 
-        <StyledSection id="about">
-          <AboutPage />
+        <StyledSection id="projects">
+          <ProjectsPage />
         </StyledSection>
 
         <StyledSection id="skills">
           <TechStackPage />
         </StyledSection>
 
-        <StyledSection id="projects">
-          <ProjectsPage />
+        <StyledSection id="about">
+          <AboutPage />
         </StyledSection>
 
         <ThemeProvider theme={connectPage}>
