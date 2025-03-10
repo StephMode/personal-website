@@ -10,7 +10,8 @@ export const projects = [
   },
   {
     title: "Personal Website",
-    description: "The website you are currently visiting.",
+    description:
+      "My personal portfolio website. The website you are currently visiting.",
     technologies: ["React", "StyledComponents", "CSS Animations"],
     imageURL: "/images/project-showcase-portfolio-website.png",
     repoLinkURL: "https://github.com/StephMode/plant-pal",
