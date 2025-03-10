@@ -90,10 +90,6 @@ const StyledImage = styled.img`
   max-width: 250px;
   border-radius: 10px;
 
-  filter: grayscale(1);
-  &:hover {
-    filter: grayscale(0);
-  }
   @media screen and (max-width: 800px) {
     max-width: 150px;
   }
