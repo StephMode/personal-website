@@ -11,8 +11,10 @@ export default function HomePage() {
       <StlyedGridElementImage />
 
       <StyledGridElementTitle>
-        Web
-        <br /> Developer
+        Craftsman
+        <br />
+        | Technologist
+        <br />| Communicator
       </StyledGridElementTitle>
     </StyledGridContainer>
   );
@@ -57,6 +59,7 @@ const StyledGridElementTitle = styled.h1`
   @media screen and (max-width: 840px) {
     grid-row: 2 / 2;
     grid-column: 1 / 2;
+    font-size: 25px;
   }
 `;
 

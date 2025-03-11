@@ -20,7 +20,7 @@ export default createGlobalStyle`
   --backgroundColor-badge--theme-technology: rgba(23, 20, 0, 65%);
   --backgroundColor-badge-hover--theme-technology: rgba(23, 20, 0, 45%);
 
-  --fontSize-title: 76px;
+  --fontSize-title: 56px;
   --fontSize-subTitle: 46px;
   --fontSize-navBar: 24px;
   --fontSize-navBar-mobile: 16px;
