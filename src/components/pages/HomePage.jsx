@@ -13,8 +13,9 @@ export default function HomePage() {
       <StyledGridElementTitle>
         Craftsman
         <br />
-        | Technologist
-        <br />| Communicator
+        Technologist
+        <br />
+        Communicator
       </StyledGridElementTitle>
     </StyledGridContainer>
   );
