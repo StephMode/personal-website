@@ -11,7 +11,7 @@ export default function HomePage() {
       <StlyedGridElementImage />
 
       <StyledGridElementTitle>
-        Craftsman
+        Practitioner
         <br />
         Technologist
         <br />
