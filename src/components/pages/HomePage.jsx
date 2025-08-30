@@ -11,11 +11,8 @@ export default function HomePage() {
       <StlyedGridElementImage />
 
       <StyledGridElementTitle>
-        Practitioner
-        <br />
-        Technologist
-        <br />
-        Communicator
+        IT & Business Professional working on the Intersection of Software
+        Development & Energy Infrastructure
       </StyledGridElementTitle>
     </StyledGridContainer>
   );
