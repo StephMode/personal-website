@@ -1,14 +1,5 @@
 export const projects = [
   {
-    title: "Glossary Wizard --⌨️WIP",
-    description:
-      "Tool for small develeopment teams and individual developers to create project glossaries and documentations on the fly.",
-    technologies: ["TypeScript", "TDD", "OOP"],
-    imageURL: "/images/project-showcase-glossary-wizard.png",
-    repoLinkURL: "https://github.com/StephMode/glossary-wizard/",
-    demoLinkURL: "https://glossary-wizard.vercel.app/",
-  },
-  {
     title: "Personal Website",
     description:
       "My personal portfolio website. The website you are currently visiting.",
@@ -25,14 +16,5 @@ export const projects = [
     imageURL: "/images/project-showcase-rooted.png",
     repoLinkURL: "https://github.com/StephMode/plant-pal",
     demoLinkURL: "https://rooted-capstone.vercel.app/",
-  },
-  {
-    title: "iro",
-    description:
-      "Single Page Color Palette Application. Project of the Web Development Bootcamp, in which I built a frontend in React for the first time. I'm constantly improving the app. ",
-    technologies: ["React", "StyledComponents", "restAPI"],
-    imageURL: "/images/project-showcase-iro.png",
-    repoLinkURL: "https://github.com/StephMode/iro",
-    demoLinkURL: "https://iro-app.vercel.app/",
   },
 ];
