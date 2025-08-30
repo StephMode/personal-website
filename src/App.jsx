@@ -2,7 +2,6 @@ import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
-import TechStackPage from "./components/pages/TechStackPage";
 import ProjectsPage from "./components/pages/ProjectsPage";
 import ConnectPage from "./components/pages/ConnectPage";
 
@@ -21,10 +20,6 @@ export default function App() {
 
         <StyledSection id="projects">
           <ProjectsPage />
-        </StyledSection>
-
-        <StyledSection id="skills">
-          <TechStackPage />
         </StyledSection>
 
         <StyledSection id="about">
