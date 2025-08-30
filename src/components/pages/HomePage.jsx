@@ -20,6 +20,8 @@ export default function HomePage() {
 
 const StyledGridContainer = styled.div`
   display: grid;
+  max-width: 700px;
+  min-height: 400px;
   grid-template-columns: repeat(2, minmax(420px, 1fr));
   grid-template-rows: repeat(2, minmax(300px, 1fr));
 
