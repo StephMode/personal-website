@@ -11,7 +11,7 @@ export default function HomePage() {
       <StlyedGridElementImage />
 
       <StyledGridElementTitle>
-        IT & Business Professional working on the Intersection of Software
+        IT & Business Professional Working on the Intersection of Software
         Development & Energy Infrastructure
       </StyledGridElementTitle>
     </StyledGridContainer>
