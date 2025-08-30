@@ -18,12 +18,12 @@ export default function App() {
           </StyledSection>
         </ThemeProvider>
 
-        <StyledSection id="projects">
-          <ProjectsPage />
-        </StyledSection>
-
         <StyledSection id="about">
           <AboutPage />
+        </StyledSection>
+
+        <StyledSection id="projects">
+          <ProjectsPage />
         </StyledSection>
 
         <ThemeProvider theme={connectPage}>
