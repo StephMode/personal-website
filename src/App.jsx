@@ -55,9 +55,7 @@ const StyledSection = styled.section`
   align-items: center;
   padding-top: 40px;
   gap: 10px;
-  @media screen and (max-width: 840px) {
-    height: 100%;
-  }
+  height: 90vh;
 `;
 
 StyledSection.defaultProps = {
