@@ -7,33 +7,23 @@ export default function AboutPage() {
       <SectionHeading sectionName={"About"} />
       <StyledGridElement>
         <StyledGridParagraph>
-          I am fascinated by web technologies, the digital economy and design.
-          Before pursuing web development, I had the opportunity to explore the
-          venues of Software Sales, advised users and managed implementation
-          projects. This experience made it clear to me that I wanted to be even
-          closer to software development.
+          Building on my experience in sales and project management within the
+          software industry, I pivoted to web development through an intensive
+          bootcamp. This journey allowed me to develop technical skills, create
+          portfolio projects, and build valuable connections along the way.
         </StyledGridParagraph>
       </StyledGridElement>
       <ThemeProvider theme={right}>
         <StyledGridElement>
           <StyledGridParagraph>
-            That's why I decided to dedicate myself fully to learning web
-            development and make it my profession. In doing so, I have turned my
-            fascination and passion for learning and constant challenge into
-            action.
+            Today, I work with a software engineering team at an engineering
+            consultancy, focusing on specialized civil engineering software for
+            energy infrastructure. My multi-faceted role combines project
+            management, testing, technical writing, and user support—bridging my
+            business background with technical work alongside developers.
           </StyledGridParagraph>
         </StyledGridElement>
       </ThemeProvider>
-      <StyledGridElement>
-        <StyledGridParagraph>
-          Now I am highly motivated to bring my technical skills and soft skills
-          to a team of developers and work on projects and products. I am a
-          passionate team player and able to learn new topics quickly and
-          effectively. Thanks to my professional experience, I also have strong
-          communication skills, a focus on results and the ability to organize
-          myself.
-        </StyledGridParagraph>
-      </StyledGridElement>
     </StyledGridContainer>
   );
 }
