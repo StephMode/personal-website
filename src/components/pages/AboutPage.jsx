@@ -49,7 +49,6 @@ const StyledGridElement = styled.div`
   border: 1px solid black;
   max-width: 400px;
   box-shadow: 5px 5px var(--boxShadow-color-primary);
-  border-radius: 10px;
   background-color: var(--backgroundColor-element-light);
   @media screen and (max-width: 400px) {
     justify-self: start;
