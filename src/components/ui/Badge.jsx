@@ -12,7 +12,7 @@ const StyledListItem = styled.li`
   background-color: var(${(props) => props.theme.backgroundColor});
   color: var(${(props) => props.theme.color});
   padding: ${(props) => props.theme.padding};
-  border-radius: 10px;
+  border-radius: 3px;
   font-weight: 300;
   transition: all 0.2s linear 0.1s;
   font-size: var(--fontSize-badge);

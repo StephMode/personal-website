@@ -2,7 +2,6 @@ import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
-import TechStackPage from "./components/pages/TechStackPage";
 import ProjectsPage from "./components/pages/ProjectsPage";
 import ConnectPage from "./components/pages/ConnectPage";
 
@@ -19,16 +18,12 @@ export default function App() {
           </StyledSection>
         </ThemeProvider>
 
-        <StyledSection id="projects">
-          <ProjectsPage />
-        </StyledSection>
-
-        <StyledSection id="skills">
-          <TechStackPage />
-        </StyledSection>
-
         <StyledSection id="about">
           <AboutPage />
+        </StyledSection>
+
+        <StyledSection id="projects">
+          <ProjectsPage />
         </StyledSection>
 
         <ThemeProvider theme={connectPage}>
@@ -60,9 +55,7 @@ const StyledSection = styled.section`
   align-items: center;
   padding-top: 40px;
   gap: 10px;
-  @media screen and (max-width: 840px) {
-    height: 100%;
-  }
+  height: 90vh;
 `;
 
 StyledSection.defaultProps = {

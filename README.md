@@ -1,8 +1,6 @@
 # About this Project
 
-This website serves as a showcase of who I am as a software professional and my projects.
-
-The goal is to build and continually improve upon the website using `React` and pure CSS-in-JS to create a hopefully engaging website.
+This website showcases who I am as a software professional and my projects.
 
 # Tech Stack
 
